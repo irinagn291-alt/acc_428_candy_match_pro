@@ -85,11 +85,67 @@ struct FvMap:View {
  HStack{FvPill(icon:"flame.fill",text:"\(j.p.streak) "+qz8(j.p.streak,"day streak"));FvPill(icon:"checkmark.circle.fill",text:"\(j.p.campaignDone) / 160");Spacer(minLength:0)}
  HStack{Text(T("Your journey")).font(.system(.title2,design:.rounded,weight:.heavy));Spacer();Text(T("Chapter")+" \(chapter+1) / 10").font(.subheadline)}
  HStack{Button{chapter=max(0,chapter-1)}label:{Image(systemName:"chevron.left").frame(width:44,height:44)}.disabled(chapter==0);Spacer();Text(T(["Jelly Garden","Peach Meadow","Lilac Lane","Berry Grove","Sugar Clouds","Citrus Valley","Velvet Orchard","Twilight Treats","Starry Sweets","Candy Summit"][chapter])).font(.system(.headline,design:.rounded));Spacer();Button{chapter=min(9,chapter+1)}label:{Image(systemName:"chevron.right").frame(width:44,height:44)}.disabled(chapter==9)}.background(.white,in:Capsule())
- VStack(spacing:22){ForEach(0..<4,id:\.self){row in HStack(spacing:0){ForEach(0..<4,id:\.self){col in let n=chapter*16+row*4+(row%2==0 ? col:3-col)+1;let s=j.p.results["c\(n)"]?.stars ?? 0;let locked=n>j.p.unlocked
- Button{if locked{j.message=T("Complete the previous level to open this one")}else{j.open(.level(n))}}label:{VStack(spacing:6){ZStack{Circle().fill((locked ? Color.white.opacity(0.7):n==j.p.unlocked ? cqPink:cqLilac).gradient).frame(width:58,height:58).shadow(color:cqLilac.opacity(0.18),radius:5,y:4);if locked{Image(systemName:"lock.fill").font(.headline).foregroundStyle(cqInk.opacity(0.4))}else{Text("\(n)").font(.system(.title3,design:.rounded,weight:.heavy)).foregroundStyle(cqInk)}};HStack(spacing:2){ForEach(1...3,id:\.self){i in Image(systemName:i<=s ? "star.fill":"star").font(.system(size:10,weight:.bold)).foregroundStyle(i<=s ? cqInk:cqInk.opacity(0.22))}}}.frame(maxWidth:.infinity)}.buttonStyle(.plain).accessibilityLabel(T("Level")+" \(n), \(s) "+T("stars")+(locked ? ", "+T("Locked"):"")).accessibilityIdentifier("level-\(n)")}}}}.padding(.vertical,24).padding(.horizontal,8).background(Color(red:1,green:0.88,blue:0.93),in:RoundedRectangle(cornerRadius:28))
+ levelGrid
  Button{season=true}label:{HStack(spacing:15){Image(systemName:"leaf.fill").font(.largeTitle).foregroundStyle(cqLilac);VStack(alignment:.leading,spacing:4){Text(T("Seasonal collection")).font(.headline);Text(T("12 new puzzles every month")).font(.subheadline)};Spacer();Image(systemName:"arrow.right")}.padding(21).background(.white,in:RoundedRectangle(cornerRadius:24))}.buttonStyle(.plain).accessibilityIdentifier("season")
  Text(T("No lives to wait for. Play at your own pace.")).font(.footnote).frame(maxWidth:.infinity).foregroundStyle(cqInk.opacity(0.6))
  }.padding(22).frame(maxWidth:750).frame(maxWidth:.infinity)}.background(cqPaper).toolbar(.hidden,for:.navigationBar).sheet(isPresented:$season){FvSeason().environmentObject(j)}.onAppear{chapter=min(9,(j.p.unlocked-1)/16)}}}
+
+ private var levelGrid: some View {
+  VStack(spacing: 22) {
+   ForEach(0..<4, id: \.self) { row in
+    HStack(spacing: 0) {
+     ForEach(0..<4, id: \.self) { column in
+      let offset = row % 2 == 0 ? column : 3 - column
+      let level = chapter * 16 + row * 4 + offset + 1
+      levelButton(level)
+     }
+    }
+   }
+  }
+  .padding(.vertical, 24)
+  .padding(.horizontal, 8)
+  .background(Color(red: 1, green: 0.88, blue: 0.93), in: RoundedRectangle(cornerRadius: 28))
+ }
+
+ private func levelButton(_ level: Int) -> some View {
+  let stars = j.p.results["c\(level)"]?.stars ?? 0
+  let locked = level > j.p.unlocked
+  let color = locked ? Color.white.opacity(0.7) : (level == j.p.unlocked ? cqPink : cqLilac)
+  let lockLabel = locked ? ", " + T("Locked") : ""
+  let accessibilityLabel = "\(T("Level")) \(level), \(stars) \(T("stars"))\(lockLabel)"
+
+  return Button {
+   if locked {
+    j.message = T("Complete the previous level to open this one")
+   } else {
+    j.open(.level(level))
+   }
+  } label: {
+   VStack(spacing: 6) {
+    ZStack {
+     Circle().fill(color.gradient)
+      .frame(width: 58, height: 58)
+      .shadow(color: cqLilac.opacity(0.18), radius: 5, y: 4)
+     if locked {
+      Image(systemName: "lock.fill").font(.headline).foregroundStyle(cqInk.opacity(0.4))
+     } else {
+      Text("\(level)").font(.system(.title3, design: .rounded, weight: .heavy)).foregroundStyle(cqInk)
+     }
+    }
+    HStack(spacing: 2) {
+     ForEach(1...3, id: \.self) { star in
+      Image(systemName: star <= stars ? "star.fill" : "star")
+       .font(.system(size: 10, weight: .bold))
+       .foregroundStyle(star <= stars ? cqInk : cqInk.opacity(0.22))
+     }
+    }
+   }
+   .frame(maxWidth: .infinity)
+  }
+  .buttonStyle(.plain)
+  .accessibilityLabel(accessibilityLabel)
+  .accessibilityIdentifier("level-\(level)")
+ }
 }
 struct FvSeason:View {
  @EnvironmentObject var j:JqPulse;@Environment(\.dismiss) var dismiss
