@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"0BEF3F42107942E4B84BF834" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Sources/Zq17.swift";
+			"sourceTree" = "<group>";
+		};
+		"7944A07B367A4ECD94D5F489" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Sources/JqPulse.swift";
+			"sourceTree" = "<group>";
+		};
+		"2457B63E37EA4A7382DA7792" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Sources/FvPetal.swift";
+			"sourceTree" = "<group>";
+		};
+		"041336494E504E0F9A168299" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Sources/XeSweets.swift";
+			"sourceTree" = "<group>";
+		};
+		"CAFE860562464C0A8F2633E9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Sources/QqWindow.swift";
+			"sourceTree" = "<group>";
+		};
+		"8B915F489DDD4A70AED035AE" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "Resources/Artwork.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"70627488480D424DAD0A77E6" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.json.xcstrings";
+			"path" = "Resources/Localizable.xcstrings";
+			"sourceTree" = "<group>";
+		};
+		"2186BD7FB0F34860AE8AAB61" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.json.xcstrings";
+			"path" = "Resources/InfoPlist.xcstrings";
+			"sourceTree" = "<group>";
+		};
+		"7C0BD905276A4549A192EF5B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "Resources/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"4DCFF06279434EEBA22751D2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "../Tests/ZqProof.swift";
+			"sourceTree" = "<group>";
+		};
+		"DC81BB80C6D44AC8B92D1353" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"path" = "Candy Match.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"70655E3C84B643BBB8CD0BA5" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.app-extension";
+			"path" = "PetalWindows.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"D26F1885DA6E48EFA451C272" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"path" = "PetalLogic.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"0BB25F54205745958B2A1008" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"path" = "PetalJourney.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"6FE4C6E370F6424B81F3B6BA" = {
+			"isa" = "PBXGroup";
+			"children" = ( "0BEF3F42107942E4B84BF834", "7944A07B367A4ECD94D5F489", "2457B63E37EA4A7382DA7792", "041336494E504E0F9A168299", "CAFE860562464C0A8F2633E9", "8B915F489DDD4A70AED035AE", "70627488480D424DAD0A77E6", "2186BD7FB0F34860AE8AAB61", "7C0BD905276A4549A192EF5B", "4DCFF06279434EEBA22751D2", "221B46965E374156A1028200" );
+			"sourceTree" = "<group>";
+		};
+		"221B46965E374156A1028200" = {
+			"isa" = "PBXGroup";
+			"children" = ( "DC81BB80C6D44AC8B92D1353", "70655E3C84B643BBB8CD0BA5", "D26F1885DA6E48EFA451C272", "0BB25F54205745958B2A1008" );
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"FEEB0146670C4EC5866DEF77" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "70655E3C84B643BBB8CD0BA5";
+			"settings" = {
+				"ATTRIBUTES" = ( "RemoveHeadersOnCopy" );
+			};
+		};
+		"ACC1729A6BD941679D2C5D7D" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"dstPath" = "";
+			"dstSubfolderSpec" = "13";
+			"files" = ( "FEEB0146670C4EC5866DEF77" );
+			"name" = "Embed Petal Windows";
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"86750361A7B845859F6DE3AA" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1.windows";
+				"PRODUCT_NAME" = "PetalWindows";
+				"INFOPLIST_FILE" = "Resources/Windows.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Resources/Windows.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG WIDGET_EXTENSION";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"0557E1D2AA804205AACD4157" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1.windows";
+				"PRODUCT_NAME" = "PetalWindows";
+				"INFOPLIST_FILE" = "Resources/Windows.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Resources/Windows.entitlements";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "WIDGET_EXTENSION";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"F6D762B44B6C43B18B9310E9" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "86750361A7B845859F6DE3AA", "0557E1D2AA804205AACD4157" );
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"9FBEBF2994DE48DC8E964ADF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0BEF3F42107942E4B84BF834";
+		};
+		"2B80099FBFEE40168C5191BF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CAFE860562464C0A8F2633E9";
+		};
+		"FDAEE95DA3A6410D87DDA589" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ( "9FBEBF2994DE48DC8E964ADF", "2B80099FBFEE40168C5191BF" );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"B38B1D5ED6B94D6BB5248A92" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"2300D7A2603644858F33D62F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "70627488480D424DAD0A77E6";
+		};
+		"214709266D134C50BE06B5D0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2186BD7FB0F34860AE8AAB61";
+		};
+		"3C1B7D0AB93C415BB20E0CFB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7C0BD905276A4549A192EF5B";
+		};
+		"545B5EAB4C8C4065BAE440DD" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ( "2300D7A2603644858F33D62F", "214709266D134C50BE06B5D0", "3C1B7D0AB93C415BB20E0CFB" );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"4E185090EBD043B6ADCA1719" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "F6D762B44B6C43B18B9310E9";
+			"buildPhases" = ( "FDAEE95DA3A6410D87DDA589", "B38B1D5ED6B94D6BB5248A92", "545B5EAB4C8C4065BAE440DD" );
+			"buildRules" = (  );
+			"dependencies" = (  );
+			"name" = "PetalWindows";
+			"productName" = "PetalWindows";
+			"productReference" = "70655E3C84B643BBB8CD0BA5";
+			"productType" = "com.apple.product-type.app-extension";
+		};
+		"E28B5848B8B64349BFA9224F" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1";
+				"PRODUCT_NAME" = "Candy Match";
+				"PRODUCT_MODULE_NAME" = "PetalRoute";
+				"INFOPLIST_FILE" = "Resources/Petal.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Resources/Petal.entitlements";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "JellyMark";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG ";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"8AC8346EFDF6416CB8B2FC0C" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1";
+				"PRODUCT_NAME" = "Candy Match";
+				"PRODUCT_MODULE_NAME" = "PetalRoute";
+				"INFOPLIST_FILE" = "Resources/Petal.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "Resources/Petal.entitlements";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "JellyMark";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+			};
+			"name" = "Release";
+		};
+		"97F5E487C41244449CF47FB4" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "E28B5848B8B64349BFA9224F", "8AC8346EFDF6416CB8B2FC0C" );
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"DA5251294B434D26AE84C7EC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0BEF3F42107942E4B84BF834";
+		};
+		"671DD9CA36ED4D05830D24A9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7944A07B367A4ECD94D5F489";
+		};
+		"3E62BD9BCB854C73A145E910" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2457B63E37EA4A7382DA7792";
+		};
+		"A1AE2F9CAC9A470DAC267846" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "041336494E504E0F9A168299";
+		};
+		"FF29BFC84E814824850921B2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CAFE860562464C0A8F2633E9";
+		};
+		"A5CA0EBFF2D04005A51AFAB5" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ( "DA5251294B434D26AE84C7EC", "671DD9CA36ED4D05830D24A9", "3E62BD9BCB854C73A145E910", "A1AE2F9CAC9A470DAC267846", "FF29BFC84E814824850921B2" );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D92C88A91F6B4085AFA808F5" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"AD98C9609D1A4C1CAB03E9B1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8B915F489DDD4A70AED035AE";
+		};
+		"B75D50B4B1B74D75BF3A8E56" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "70627488480D424DAD0A77E6";
+		};
+		"DF85BCD609A54A08A93010BF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2186BD7FB0F34860AE8AAB61";
+		};
+		"440DE60B60C842928D77B2A2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7C0BD905276A4549A192EF5B";
+		};
+		"0EE87A3A783C4FB39FA83C6A" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ( "AD98C9609D1A4C1CAB03E9B1", "B75D50B4B1B74D75BF3A8E56", "DF85BCD609A54A08A93010BF", "440DE60B60C842928D77B2A2" );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"8B4367773EE946A792507C47" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "9AF15AF8BD8E4376AB500073";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "4E185090EBD043B6ADCA1719";
+			"remoteInfo" = "Petal dependency";
+		};
+		"55A7938859F24CBF938574BB" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "4E185090EBD043B6ADCA1719";
+			"targetProxy" = "8B4367773EE946A792507C47";
+		};
+		"74DBEB67E7D5435688981FCA" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "97F5E487C41244449CF47FB4";
+			"buildPhases" = ( "A5CA0EBFF2D04005A51AFAB5", "D92C88A91F6B4085AFA808F5", "0EE87A3A783C4FB39FA83C6A", "ACC1729A6BD941679D2C5D7D" );
+			"buildRules" = (  );
+			"dependencies" = ( "55A7938859F24CBF938574BB" );
+			"name" = "PetalRoute";
+			"productName" = "PetalRoute";
+			"productReference" = "DC81BB80C6D44AC8B92D1353";
+			"productType" = "com.apple.product-type.application";
+		};
+		"F0C6A4C448404A9196DE36BF" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1.logic";
+				"PRODUCT_NAME" = "PetalLogic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/Candy Match.app/Candy Match";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG ";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"18F4940845ED4A7A91D0610F" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1.logic";
+				"PRODUCT_NAME" = "PetalLogic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/Candy Match.app/Candy Match";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+			};
+			"name" = "Release";
+		};
+		"5227CAB5E9DE47828643338D" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "F0C6A4C448404A9196DE36BF", "18F4940845ED4A7A91D0610F" );
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"07FE7CB9020F4664B027374C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4DCFF06279434EEBA22751D2";
+		};
+		"CE1BC7E0406C4A5A8A6646A9" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ( "07FE7CB9020F4664B027374C" );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"E23E4D3F01584C92AB087123" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"9A7B99CC8F37403593E406CA" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"0A85C57EBE0A46C9BAAD919F" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "9AF15AF8BD8E4376AB500073";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "74DBEB67E7D5435688981FCA";
+			"remoteInfo" = "Petal dependency";
+		};
+		"83D610FCCEC440E7AF6F01A3" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "74DBEB67E7D5435688981FCA";
+			"targetProxy" = "0A85C57EBE0A46C9BAAD919F";
+		};
+		"310C54C5FDE54078B016A0A8" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "5227CAB5E9DE47828643338D";
+			"buildPhases" = ( "CE1BC7E0406C4A5A8A6646A9", "E23E4D3F01584C92AB087123", "9A7B99CC8F37403593E406CA" );
+			"buildRules" = (  );
+			"dependencies" = ( "83D610FCCEC440E7AF6F01A3" );
+			"name" = "PetalLogic";
+			"productName" = "PetalLogic";
+			"productReference" = "D26F1885DA6E48EFA451C272";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+		};
+		"F0C7356EC227472BAEAEADBB" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1.journey";
+				"PRODUCT_NAME" = "PetalJourney";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_TARGET_NAME" = "PetalRoute";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG UI_PROOF";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"112EF2ACA53D4427A2A549CE" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.candymatch.app-4455c3fb18a1.journey";
+				"PRODUCT_NAME" = "PetalJourney";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"TEST_TARGET_NAME" = "PetalRoute";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "UI_PROOF";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"D8E0CA83C08D4427B7687B9D" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "F0C7356EC227472BAEAEADBB", "112EF2ACA53D4427A2A549CE" );
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"3B6805F0A09443328648DA71" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4DCFF06279434EEBA22751D2";
+		};
+		"81A1C05170824BE9A1A49300" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0BEF3F42107942E4B84BF834";
+		};
+		"84B94ECF8B3940DBB336981B" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ( "3B6805F0A09443328648DA71", "81A1C05170824BE9A1A49300" );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"95E9F49598FD4213B9C7D273" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"4CF74DADEC0E47AEB82B56F4" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"850ED74C73BD472DB77CBD10" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "9AF15AF8BD8E4376AB500073";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "74DBEB67E7D5435688981FCA";
+			"remoteInfo" = "Petal dependency";
+		};
+		"7AB872935815411F81D60BE9" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "74DBEB67E7D5435688981FCA";
+			"targetProxy" = "850ED74C73BD472DB77CBD10";
+		};
+		"01C5C0C122E54AEFBD3CDD46" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "D8E0CA83C08D4427B7687B9D";
+			"buildPhases" = ( "84B94ECF8B3940DBB336981B", "95E9F49598FD4213B9C7D273", "4CF74DADEC0E47AEB82B56F4" );
+			"buildRules" = (  );
+			"dependencies" = ( "7AB872935815411F81D60BE9" );
+			"name" = "PetalJourney";
+			"productName" = "PetalJourney";
+			"productReference" = "0BB25F54205745958B2A1008";
+			"productType" = "com.apple.product-type.bundle.ui-testing";
+		};
+		"1AADE1BB73BF4F469B32B646" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG ";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"D6092C25446747758208A1D1" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.4";
+				"SDKROOT" = "iphoneos";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"MARKETING_VERSION" = "1.1.4";
+				"CURRENT_PROJECT_VERSION" = "174";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_STRICT_CONCURRENCY" = "minimal";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "";
+			};
+			"name" = "Release";
+		};
+		"8E482B8323CF4A5C8C8C52FF" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( "1AADE1BB73BF4F469B32B646", "D6092C25446747758208A1D1" );
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"9AF15AF8BD8E4376AB500073" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"BuildIndependentTargetsInParallel" = "YES";
+				"LastUpgradeCheck" = "2720";
+				"ORGANIZATIONNAME" = "Petal Arc 174";
+				"TargetAttributes" = {
+					"74DBEB67E7D5435688981FCA" = {
+						"SystemCapabilities" = {
+							
+							"com.apple.ApplicationGroups.iOS" = {
+								"enabled" = "1";
+							};
+						};
+					};
+					"4E185090EBD043B6ADCA1719" = {
+						"SystemCapabilities" = {
+							"com.apple.ApplicationGroups.iOS" = {
+								"enabled" = "1";
+							};
+						};
+					};
+				};
+			};
+			"buildConfigurationList" = "8E482B8323CF4A5C8C8C52FF";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "en";
+			"hasScannedForEncodings" = "0";
+			"knownRegions" = ( "en", "en-GB", "en-US", "ar", "zh-Hant", "de", "fr", "pt-BR", "Base" );
+			"mainGroup" = "6FE4C6E370F6424B81F3B6BA";
+			"productRefGroup" = "221B46965E374156A1028200";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = ( "74DBEB67E7D5435688981FCA", "4E185090EBD043B6ADCA1719", "310C54C5FDE54078B016A0A8", "01C5C0C122E54AEFBD3CDD46" );
+		};
+	};
+	"rootObject" = "9AF15AF8BD8E4376AB500073";
+}
